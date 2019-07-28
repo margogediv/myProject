@@ -8,8 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i&display=swap" rel="stylesheet">
 	
 	<!-- Owl Stylesheets -->
-    <link rel="stylesheet" href="/js/owl-carusel/assets/owlcarousel/assets/wl.carousel.min.css">
-    <link rel="stylesheet" href="/js/owl-carusel/assets/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/js/owl-carusel/assets/owl.carousel.min.css">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -53,26 +52,51 @@
 	 </div>
 
 	 <div id="owl-carousel" class="owl-carousel owl-theme">
-	  <div> Your Content </div>
-	  <div> Your Content </div>
-	  <div> Your Content </div>
-	  <div> Your Content </div>
-	  <div> Your Content </div>
-	  <div> Your Content </div>
-	  <div> Your Content </div>
+	  <div class="item"> 
+	      <span>
+	          Текст
+	      </span>
+	  </div>
+	  <div class="item"> 
+	      <img src="https://i.ytimg.com/vi/HjpvlrD0wlg/maxresdefault.jpg" alt="">
+	  </div>
+	  <div class="item"> 
+	      <img src="http://prodod.moscow/wp-content/uploads/2018/10/environment-2196690_640.jpg" alt="">
+	  </div>
+	  
+	  <div class="item"> 
+	      <img src="https://i.ytimg.com/vi/HjpvlrD0wlg/maxresdefault.jpg" alt="">
+	  </div>
+	  
+	  
+	  <div class="item"> 
+	      <img src="https://cameralabs.org/media/k2/items/cache/6cc200c91775de8f840af2bbd0977307_L.jpg" alt="">
+	  </div>
 	</div>
 
+<!--jQuery -->
 	 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 
-  <script src="js/owl-carusel/owl.carousel.js"></script>
+<!--Slider js -->
+  <script src="/js/owl-carusel/owl.carousel.min.js"></script>
+  <!-- start Slider -->
 	<script>
 		$(document).ready(function(){
-		  $('#owl-carousel').owlCarousel();
+		  $('#owl-carousel').owlCarousel({
+		      items: 4,
+		      margin: 30,
+		      loop: true,
+		      autoplay: true,
+		      autoplayTimeout: 2000,
+		      animateOut: true,
+		      dots: true,
+		  });
 		});
 	</script>
+	
   <script>
   	 var angle = 0;
 		function galleryspin(sign) { 

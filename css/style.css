@@ -114,4 +114,7 @@ div#carousel ~ span {
   line-height: 0; }
 div#carousel ~ span:hover { color: #888; cursor: pointer; }
 
+.owl-carousel  .item img {
+    height: 300px;
+}
 /*======= end Slider ==============================*/
