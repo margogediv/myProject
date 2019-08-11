@@ -35,6 +35,16 @@ h1, h2, h3, h4, h5, h6 {
    
 }
 
+.header.fixed {
+    position: fixed;
+    background-color: #2b2e48;
+}
+
+.header.fixed .header__inner {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
 .header__inner {
 	display: flex;
 	justify-content: space-between;
@@ -564,6 +574,23 @@ h1, h2, h3, h4, h5, h6 {
 /*=======Nav=============================*/
     .nav {
         display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #3a3e64;
+        text-align: right;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        
+    }
+    
+    .nav.show {
+        display: flex;
+        
+    }
+    
+    .nav__link {
+        padding: 10px 15px;
     }
     
 /*=======Burger=============================*/    
